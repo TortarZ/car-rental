@@ -1,0 +1,50 @@
+.header {
+  margin: 0 290px;
+  padding: 27px 20px;
+  font-family: var(--font-rubik);
+}
+
+.navbar-link,
+.navbar-con,
+.navbar-btns {
+  display: flex;
+}
+
+.navbar-con {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-link {
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.navbar-link,
+.signin-btn {
+  font-weight: 500;
+}
+
+.navbar-btns {
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.regis-btn {
+  color: var(--btn-text);
+  background-color: var(--btn);
+  font-weight: 700;
+  width: 125px;
+  height: 49px;
+  padding: 15px 30px;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+
+.nav-hover {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-hover:hover {
+  color: var(--btn);
+}

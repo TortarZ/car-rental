@@ -5,8 +5,49 @@
 :root {
   --btn: #ff4d30;
   --btn-text: #ffffff;
+  --btn-black: #010103;
+  --bg-gradient: linear-gradient(
+    180deg,
+    rgba(248, 248, 248, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 body {
   font-family: var(--font-poppins);
+  background: var(--bg-gradient);
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 10px 0 23px;
+}
+
+h4 {
+  font-family: var(--font-rubik);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--font-rubik);
+  font-size: 16px;
+  color: #706f7b;
+  margin-bottom: 40px;
+}
+
+.button {
+  color: var(--btn-text);
+  background-color: var(--btn);
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 0 10px 20px 0 rgba(255, 83, 48, 0.35);
 }

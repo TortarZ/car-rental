@@ -1,0 +1,50 @@
+.homepage-con {
+  position: relative;
+}
+
+.hero-con {
+  display: flex;
+  align-items: center;
+  padding: 30px 300px;
+  background: rgb(248, 248, 248);
+}
+
+.bg-homepage {
+  width: 680px;
+  height: 780px;
+  position: absolute;
+  top: -110px;
+  right: 0;
+  z-index: 1;
+}
+
+.btn-con {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.book-ride-btn,
+.learn-more-btn {
+  padding: 18px 30px;
+  color: var(--btn-text);
+  display: flex;
+  align-items: center;
+}
+
+.learn-more-btn {
+  background-color: var(--btn-black);
+  border: 2px solid var(--btn-black);
+  font-weight: 700;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.learn-more-btn:hover {
+  background-color: initial;
+  color: var(--btn-black);
+}
+
+.hero-img {
+  width: 100%;
+  z-index: 2;
+}

@@ -30,7 +30,7 @@ const Header = () => {
             <a href="/" className="nav-hover signin-btn">
               Sign In
             </a>
-            <a href="/" className="regis-btn">
+            <a href="/" className="button regis-btn">
               Register
             </a>
           </div>

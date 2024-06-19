@@ -1,0 +1,37 @@
+label {
+  display: flex;
+}
+
+.book-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 15%;
+}
+
+.bookcar-con {
+  background-image: url("../../../public/bookcar-bg.png");
+  background-color: #fff;
+  padding: 40px 45px 50px 55px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.bookcar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.submit-btn {
+  width: 380px;
+  height: 46px;
+  padding: 12px 13px;
+}
+
+.box-form {
+  margin-top: 1.6rem;
+}

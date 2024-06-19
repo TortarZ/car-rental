@@ -6,6 +6,8 @@
   --btn: #ff4d30;
   --btn-text: #ffffff;
   --btn-black: #010103;
+  --input-border: #ccd7e6;
+  --input-text: #ababab;
   --bg-gradient: linear-gradient(
     180deg,
     rgba(248, 248, 248, 1) 35%,
@@ -25,6 +27,11 @@ h1 {
   margin: 10px 0 23px;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 h4 {
   font-family: var(--font-rubik);
   font-size: 22px;
@@ -38,6 +45,28 @@ p {
   margin-bottom: 40px;
 }
 
+b {
+  color: #ff4d30;
+}
+
+select,
+input {
+  padding: 12px 13px;
+  width: 380px;
+  height: 46px;
+  border: 1px solid var(--input-border);
+  border-radius: 3px;
+  color: var(--input-text);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+label {
+  font-weight: 600;
+  gap: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+
 .button {
   color: var(--btn-text);
   background-color: var(--btn);
@@ -49,5 +78,5 @@ p {
 }
 
 .button:hover {
-  box-shadow: 0 10px 20px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 10px 20px 0 rgba(255, 83, 48, 0.6);
 }

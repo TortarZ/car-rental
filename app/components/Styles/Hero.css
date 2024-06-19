@@ -5,8 +5,7 @@
 .hero-con {
   display: flex;
   align-items: center;
-  padding: 30px 300px;
-  background: rgb(248, 248, 248);
+  padding: 10rem 300px;
 }
 
 .bg-homepage {

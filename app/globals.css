@@ -32,6 +32,12 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-family: var(--font-rubik);
+  font-style: 2.4rem;
+  font-weight: 600;
+}
+
 h4 {
   font-family: var(--font-rubik);
   font-size: 22px;

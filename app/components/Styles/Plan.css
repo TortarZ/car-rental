@@ -1,0 +1,40 @@
+.plan-img {
+  width: 180px;
+}
+
+.plan-container-title {
+  text-align: center;
+}
+
+.plan-container-title h3 {
+  font-size: 1.5rem;
+}
+
+.plan-container-title h2 {
+  font-size: 2.6rem;
+}
+
+.plan-container,
+.plan-container-boxes,
+.plan-container-boxes-box {
+  display: flex;
+  align-items: center;
+}
+
+.plan-container {
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 15rem;
+}
+
+.plan-container-boxes {
+  justify-content: space-between;
+  padding: 5rem 15rem;
+  gap: 1.6rem;
+}
+
+.plan-container-boxes-box {
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}

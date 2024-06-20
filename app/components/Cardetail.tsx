@@ -24,15 +24,17 @@ const Cardetail = () => {
               <button className="button">Mercedes-Benz GLK</button>
               <button className="button">VW Passat CC</button>
             </div>
-            <Image
-              src="/Audi A1 S-Line.jpg"
-              width={0}
-              height={0}
-              alt="audi_a1_s-line"
-              sizes="100vh"
-              priority
-              className="pick-car"
-            />
+            <div className="pick-img">
+              <Image
+                src="/Audi A1 S-Line.jpg"
+                width={0}
+                height={0}
+                alt="audi_a1_s-line"
+                sizes="100vh"
+                priority
+                className="pick-car"
+              />
+            </div>
             <div className="pick-detail">
               <div className="car-detail-price">
                 <span>$45</span>

@@ -71,6 +71,7 @@ const Hero = () => {
               alt="bg-img"
               sizes="100vh"
               className="hero-img"
+              priority
             />
           </div>
         </div>

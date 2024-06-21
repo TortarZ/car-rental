@@ -3,9 +3,10 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import BookCar from "./components/BookCar";
 import Plan from "./components/Plan";
-import Cardetail from "./components/Cardetail";
 import Banner from "./components/Banner";
 import PromoCar from "./components/PromoCar";
+import UserReview from "./components/UserReview";
+import CarDetail from "./components/CarDetail";
 
 export default function Home() {
   return (
@@ -13,10 +14,11 @@ export default function Home() {
       <Header />
       <Hero />
       <BookCar />
+      <CarDetail />
       <Plan />
-      <Cardetail />
       <Banner />
       <PromoCar />
+      <UserReview />
     </>
   );
 }

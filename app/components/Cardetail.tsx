@@ -1,8 +1,8 @@
 import React from "react";
-import "./Styles/Cardetail.css";
+import "./Styles/CarDetail.css";
 import Image from "next/image";
 
-const Cardetail = () => {
+const CarDetail = () => {
   return (
     <>
       <section>
@@ -12,7 +12,7 @@ const Cardetail = () => {
             <h2>Our rental fleet</h2>
             <p>
               Choose from a variety of our amazing vehicles to rent for your
-              next adventure or bussiness trip
+              next adventure or business trip
             </p>
           </div>
           <div className="pick-container">
@@ -81,4 +81,4 @@ const Cardetail = () => {
   );
 };
 
-export default Cardetail;
+export default CarDetail;

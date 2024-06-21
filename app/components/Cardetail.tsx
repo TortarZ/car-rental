@@ -17,12 +17,12 @@ const Cardetail = () => {
           </div>
           <div className="pick-container">
             <div className="pick-box">
-              <button className="button">Audi A1 S-Line</button>
-              <button className="button">VW Golf 6</button>
-              <button className="button">Toyota Camry</button>
-              <button className="button">BMW 320 ModernLine</button>
-              <button className="button">Mercedes-Benz GLK</button>
-              <button className="button">VW Passat CC</button>
+              <button className="button pick-btn active">Audi A1 S-Line</button>
+              <button className="button pick-btn">VW Golf 6</button>
+              <button className="button pick-btn">Toyota Camry</button>
+              <button className="button pick-btn">BMW 320 ModernLine</button>
+              <button className="button pick-btn">Mercedes-Benz GLK</button>
+              <button className="button pick-btn">VW Passat CC</button>
             </div>
             <div className="pick-img">
               <Image

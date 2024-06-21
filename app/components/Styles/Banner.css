@@ -1,0 +1,26 @@
+.banner-con {
+  margin-top: 10rem;
+  width: 100%;
+  height: fit-content;
+  background-color: #2d2d2d;
+  padding: 3rem;
+}
+
+.banner-box {
+  text-align: center;
+}
+
+.banner-box h2 {
+  font-size: 52px;
+  color: var(--btn-text);
+}
+
+.banner-box p {
+  font-size: 24px;
+  color: var(--btn-text);
+  margin-bottom: 0;
+}
+
+.banner-box span {
+  color: var(--btn);
+}

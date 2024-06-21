@@ -1,0 +1,75 @@
+.promo-con {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url("../../../public/bg_promote.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -225px 255px;
+}
+
+.promo-con-box {
+  padding: 0 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-car-img {
+  width: 85%;
+}
+
+.promo-con-description {
+  width: 100%;
+  gap: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.promo-text-left h4 {
+  font-size: 22px;
+  font-family: var(--font-rubik);
+}
+
+.promo-text-left h2 {
+  font-size: 42px;
+  margin-bottom: 25px;
+  line-height: 45px;
+}
+
+.promo-text-left {
+  max-width: 30rem;
+}
+
+.promo-text-right {
+  max-width: 30rem;
+}
+
+.promo-text-box {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.promo-box-img {
+  width: 100px;
+  height: 100px;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-text h4 {
+  font-size: 24px;
+}
+
+.box-text p {
+  margin-bottom: 0;
+}
+
+.find-detail-btn {
+  display: flex;
+  width: fit-content;
+}

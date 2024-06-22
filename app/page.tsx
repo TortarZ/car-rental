@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import PromoCar from "./components/PromoCar";
 import UserReview from "./components/UserReview";
 import CarDetail from "./components/CarDetail";
+import FAQ from "./components/FAQ";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Banner />
       <PromoCar />
       <UserReview />
+      <FAQ />
     </>
   );
 }

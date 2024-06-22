@@ -1,6 +1,10 @@
+.car-detail-con {
+  width: 100%;
+}
+
 .pick-title {
   text-align: center;
-  margin: 0 40rem 3rem;
+  padding: 0 35%;
 }
 
 .pick-title h3 {
@@ -14,7 +18,7 @@
 .pick-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 300px;
+  padding: 0 20%;
 }
 
 .pick-box {

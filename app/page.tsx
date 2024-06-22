@@ -15,8 +15,8 @@ export default function Home() {
       <Header />
       <Hero />
       <BookCar />
-      <CarDetail />
       <Plan />
+      <CarDetail />
       <Banner />
       <PromoCar />
       <UserReview />

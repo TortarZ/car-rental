@@ -1,6 +1,6 @@
 .header {
-  margin: 0 290px;
-  padding: 27px 20px;
+  width: 100%;
+  padding: 1.5rem 15%;
   font-family: var(--font-rubik);
   position: sticky;
   z-index: 999;

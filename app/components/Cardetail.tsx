@@ -6,7 +6,7 @@ const CarDetail = () => {
   return (
     <>
       <section>
-        <div>
+        <div className="car-detail-con">
           <div className="pick-title">
             <h3>Vehicle Models</h3>
             <h2>Our rental fleet</h2>

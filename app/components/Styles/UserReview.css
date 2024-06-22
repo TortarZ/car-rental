@@ -1,0 +1,79 @@
+.user-review-con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+  background-color: #f8f8f8;
+}
+
+.user-review-title {
+  text-align: center;
+  width: 37%;
+  margin-bottom: 20px;
+}
+
+.user-review-title h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.user-review-example {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  gap: 1.6rem;
+}
+
+.example {
+  background-color: white;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+  width: 60%;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.example p {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--btn-black);
+  font-family: var(--font-poppins);
+}
+
+.example-user,
+.example-box {
+  display: flex;
+}
+
+.example-box {
+  align-items: center;
+}
+
+.example-user {
+  align-items: center;
+  padding-right: 40%;
+}
+
+.quote-icon {
+  color: var(--btn);
+}
+
+.example-username p {
+  font-family: var(--font-rubik);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.example-username h4 {
+  font-size: 18px;
+  font-family: var(--font-poppins);
+}
+
+.example-profile-pic {
+  width: 5rem;
+  border-radius: 100%;
+  margin-right: 1.2rem;
+}

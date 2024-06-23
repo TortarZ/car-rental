@@ -36,6 +36,7 @@ const Header = () => {
           </div>
         </div>
       </header>
+      <div className="scroll-up">^</div>
     </>
   );
 };

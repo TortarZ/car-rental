@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import BookCar from "./components/BookCar";
@@ -8,6 +7,8 @@ import PromoCar from "./components/PromoCar";
 import UserReview from "./components/UserReview";
 import CarDetail from "./components/CarDetail";
 import FAQ from "./components/FAQ";
+import Download from "./components/Download";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       <PromoCar />
       <UserReview />
       <FAQ />
+      <Download />
+      <Footer />
     </>
   );
 }

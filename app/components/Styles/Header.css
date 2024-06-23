@@ -44,3 +44,21 @@
   width: 125px;
   height: 49px;
 }
+
+.scroll-up {
+  background-color: var(--btn);
+  bottom: 2%;
+  right: 2%;
+  padding: 0.1rem 0.8rem;
+  position: fixed;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 500;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 1.5rem 1rem;
+  }
+}

@@ -1,0 +1,35 @@
+.download-con {
+  width: 100%;
+  background-color: var(--bg-gray);
+  background-image: url("../../../public/Download_Bg.png");
+  background-position: bottom 450% right 0;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.download-con-box {
+  width: 60%;
+  padding: 2rem 2.5rem;
+}
+
+.download-con-content {
+  width: 50%;
+}
+
+.download-con-content h2 {
+  font-size: 42px;
+  margin-bottom: 1.5rem;
+}
+
+.download-con-content-box {
+  display: flex;
+  padding-right: 5rem;
+  gap: 1.6rem;
+}
+
+.download-btn {
+  width: 35%;
+  cursor: pointer;
+}

@@ -1,0 +1,65 @@
+.footer-con {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 15%;
+}
+
+.footer-con-box {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.6fr 1fr;
+  gap: 1.6rem;
+  color: var(--btn-black);
+}
+
+.footer-con-box ul:nth-child(4) {
+  width: 80%;
+}
+
+.footer-content li {
+  margin-bottom: 1.2rem;
+}
+
+.footer-content li:first-child {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--btn-black);
+}
+
+.car-rental-content-text {
+  color: var(--text-gray);
+}
+
+.car-rental-content-contact a {
+  display: flex;
+  gap: 0.6rem;
+  font-family: var(--font-rubik);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.car-rental-content-contact a:hover,
+.car-rental-design-link a:hover,
+.company-link a:hover {
+  color: var(--btn);
+}
+
+.car-rental-design-link a {
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.company-link a {
+  transition: all 0.2s;
+}
+
+.input-email {
+  background-color: #ececec;
+  border: none;
+  padding: 0.5rem 4rem;
+  font-size: 14px;
+  font-family: var(--font-rubik);
+  width: 100%;
+  outline: none;
+  color: var(--btn-black);
+}

@@ -6,9 +6,11 @@
   --btn: #ff4d30;
   --btn-text: #ffffff;
   --btn-black: #010103;
+  --text-gray: #706f7b;
   --input-border: #ccd7e6;
   --input-text: #ababab;
   --faq-ans-text: #706f7b;
+  --bg-gray: #f8f8f8;
   --bg-gradient: linear-gradient(
     180deg,
     rgba(248, 248, 248, 1) 35%,
@@ -85,5 +87,9 @@ label {
 }
 
 .button:hover {
-  box-shadow: 0 10px 20px 0 rgba(255, 83, 48, 0.6);
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
+}
+
+.footer-content .button {
+  width: 100%;
 }

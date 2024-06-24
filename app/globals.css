@@ -61,8 +61,7 @@ b {
 select,
 input {
   padding: 12px 13px;
-  width: 380px;
-  height: 46px;
+  width: 100%;
   border: 1px solid var(--input-border);
   border-radius: 3px;
   color: var(--input-text);

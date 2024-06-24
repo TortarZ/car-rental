@@ -69,7 +69,7 @@ const Hero = () => {
               height={0}
               width={0}
               alt="bg-img"
-              sizes="100vh"
+              sizes="100%"
               className="hero-img"
               priority
             />

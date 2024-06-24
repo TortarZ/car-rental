@@ -63,3 +63,18 @@
   outline: none;
   color: var(--btn-black);
 }
+
+@media (max-width: 1024px) {
+  .footer-con {
+    padding: 5rem 3rem;
+  }
+
+  .footer-con-box {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .footer-con-box ul:nth-child(4) {
+    width: 100%;
+  }
+}

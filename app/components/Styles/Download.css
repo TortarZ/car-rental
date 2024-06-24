@@ -33,3 +33,22 @@
   width: 35%;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .download-con {
+    background-position: right -250px bottom 0;
+    justify-content: flex-start;
+  }
+
+  .download-con-content {
+    width: 100%;
+  }
+
+  .download-con-content-box {
+    padding: 0 6rem 0 0;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+}

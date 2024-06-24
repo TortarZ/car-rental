@@ -1,5 +1,6 @@
 .car-detail-con {
   width: 100%;
+  padding: 5rem 20rem;
 }
 
 .pick-title {
@@ -18,7 +19,7 @@
 .pick-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 20%;
+  align-items: flex-start;
 }
 
 .pick-box {
@@ -57,7 +58,6 @@
 
 .pick-img {
   width: 50%;
-  margin-top: 25px;
 }
 
 .car-detail-price {
@@ -108,4 +108,40 @@
 
 .btn-box {
   display: flex;
+}
+
+@media (max-width: 1024px) {
+  .pick-title {
+    padding: 0 10rem;
+  }
+  .car-detail-con {
+    padding: 5rem 3rem;
+  }
+
+  #item-1 {
+    order: 2;
+  }
+  #item-2 {
+    order: 1;
+  }
+  #item-3 {
+    order: 3;
+  }
+
+  .pick-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 0;
+  }
+
+  .pick-img {
+    padding: 0 5rem;
+    width: 100%;
+  }
+
+  .pick-box,
+  .pick-detail {
+    padding: 2rem 3rem;
+    width: 50%;
+  }
 }

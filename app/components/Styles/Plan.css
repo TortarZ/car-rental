@@ -41,7 +41,7 @@
 
 @media (max-width: 1024px) {
   .plan-container {
-    padding: 10rem 3rem;
+    padding: 10rem 3rem 0;
   }
 
   .plan-container-boxes {

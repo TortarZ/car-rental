@@ -1,6 +1,5 @@
 .promo-con {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 3rem;
   background-image: url("../../../public/bg_promote.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,14 +7,13 @@
 }
 
 .promo-con-box {
-  padding: 0 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .promo-car-img {
-  width: 85%;
+  width: 60%;
 }
 
 .promo-con-description {
@@ -72,4 +70,34 @@
 .find-detail-btn {
   display: flex;
   width: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .promo-con {
+    background-position: -230px 300px;
+  }
+
+  .promo-car-img {
+    width: 100%;
+  }
+
+  .promo-text-left,
+  .promo-text-right {
+    width: 50%;
+  }
+
+  .promo-text-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .promo-con-description {
+    gap: 1rem;
+  }
+
+  .promo-box-img {
+    width: 120px;
+    height: 120px;
+  }
 }

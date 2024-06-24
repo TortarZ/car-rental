@@ -145,3 +145,40 @@
     width: 50%;
   }
 }
+
+@media (max-width: 430px) {
+  .pick-title {
+    padding: 0;
+  }
+  .car-detail-con {
+    padding: 5rem 1rem;
+  }
+
+  #item-1 {
+    order: 1;
+  }
+  #item-2 {
+    order: 2;
+  }
+  #item-3 {
+    order: 3;
+  }
+
+  .pick-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 0;
+    gap: 1.6rem;
+  }
+
+  .pick-img {
+    padding: 0;
+    width: 100%;
+  }
+
+  .pick-box,
+  .pick-detail {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}

@@ -5,10 +5,10 @@ import Plan from "./components/Plan";
 import Banner from "./components/Banner";
 import PromoCar from "./components/PromoCar";
 import UserReview from "./components/UserReview";
-import CarDetail from "./components/CarDetail";
 import FAQ from "./components/FAQ";
 import Download from "./components/Download";
 import Footer from "./components/Footer";
+import CarDetail from "./components/CarDetail";
 
 export default function Home() {
   return (

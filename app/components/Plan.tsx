@@ -56,7 +56,7 @@ const Plan = () => {
               />
               <h2>Let's Drive</h2>
               <p>
-                Whether you;re hitting the open road, we've hot you covered with
+                Whether you're hitting the open road, we've hot you covered with
                 our wide range of cars
               </p>
             </div>

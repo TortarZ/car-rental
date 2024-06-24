@@ -54,3 +54,20 @@
     padding: 0 4rem;
   }
 }
+
+@media (max-width: 768px) {
+  .plan-container {
+    padding: 5rem 2rem;
+  }
+
+  .plan-container-boxes {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .plan-container-boxes-box {
+    padding: 0;
+  }
+}

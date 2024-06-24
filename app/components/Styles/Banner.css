@@ -1,5 +1,5 @@
 .banner-con {
-  margin-top: 10rem;
+  margin-top: 5rem;
   width: 100%;
   height: fit-content;
   background-color: #2d2d2d;
@@ -23,4 +23,16 @@
 
 .banner-box span {
   color: var(--btn);
+}
+
+@media (max-width: 1024px) {
+  .banner-con {
+    padding: 4rem 0;
+  }
+
+  .banner-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 }

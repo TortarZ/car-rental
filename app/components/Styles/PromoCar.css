@@ -101,3 +101,39 @@
     height: 120px;
   }
 }
+
+@media (max-width: 768px) {
+  .promo-con-description {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .promo-text-left,
+  .promo-text-right {
+    width: 100%;
+  }
+
+  .promo-text-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .promo-con {
+    padding: 5rem 1rem;
+  }
+
+  .promo-box-img {
+    padding: 1rem 8rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .promo-text-box {
+    flex-direction: column;
+  }
+}

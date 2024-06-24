@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "./Styles/CarDetail.css";
+import "./Styles/Cardetail.css";
 
 const CarDetail = () => {
   return (

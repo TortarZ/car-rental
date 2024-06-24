@@ -8,7 +8,7 @@ import UserReview from "./components/UserReview";
 import FAQ from "./components/FAQ";
 import Download from "./components/Download";
 import Footer from "./components/Footer";
-import CarDetail from "./components/CarDetail";
+import CarDetail from "./components/Cardetail";
 
 export default function Home() {
   return (

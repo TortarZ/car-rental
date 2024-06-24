@@ -45,3 +45,19 @@ label {
     padding: 2rem 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .book-section {
+    padding: 2rem 1rem;
+  }
+
+  .bookcar-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  .bookcar-content {
+    grid-template-columns: 1fr;
+  }
+}

@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 390px), (max-width: 430px) {
   .hero-con {
     padding: 5rem 2rem;
   }

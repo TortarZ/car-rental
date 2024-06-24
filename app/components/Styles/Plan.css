@@ -38,3 +38,19 @@
   text-align: center;
   gap: 1rem;
 }
+
+@media (max-width: 1024px) {
+  .plan-container {
+    padding: 10rem 3rem;
+  }
+
+  .plan-container-boxes {
+    align-items: flex-start;
+    padding: 5rem 0;
+    gap: 0;
+  }
+
+  .plan-container-boxes-box {
+    padding: 0 4rem;
+  }
+}

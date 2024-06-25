@@ -86,3 +86,31 @@
     padding: 0 5rem;
   }
 }
+
+@media (max-width: 768px) {
+  .user-review-example li:nth-child(2) {
+    display: none;
+  }
+
+  .user-review-example {
+    padding: 0 3.5rem;
+  }
+
+  .user-review-title {
+    padding: 0;
+  }
+
+  .example {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .user-review-con {
+    padding: 5rem 1rem;
+  }
+
+  .user-review-example {
+    padding: 0;
+  }
+}

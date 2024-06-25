@@ -17,8 +17,8 @@ const UserReview = () => {
               experiences with you.
             </p>
           </div>
-          <div className="user-review-example">
-            <div className="example">
+          <ul className="user-review-example">
+            <li className="example">
               <p>
                 "We rented a car from this website and had an amazing
                 experience! The booking was easy and the rental rates were very
@@ -57,8 +57,8 @@ const UserReview = () => {
                   </svg>
                 </span>
               </div>
-            </div>
-            <div className="example">
+            </li>
+            <li className="example">
               <p>
                 "The car was in great condition and made our trip even better.
                 Highly recommend for this car rental website!"
@@ -96,8 +96,8 @@ const UserReview = () => {
                   </svg>
                 </span>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
     </>

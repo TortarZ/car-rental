@@ -45,9 +45,42 @@
   }
 
   .download-con-content-box {
-    padding: 0 6rem 0 0;
+    padding: 0;
+    margin: 0 5rem 0 0;
   }
 
+  .download-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .download-con-content-box {
+    padding: 0;
+  }
+  .download-btn {
+    width: 60%;
+  }
+}
+
+@media (max-width: 430px) {
+  .download-con {
+    background-image: none;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .download-con-box,
+  .download-con-content {
+    width: 100%;
+  }
+
+  .download-con-content-box {
+    flex-direction: column;
+    padding: 0 3rem;
+    margin: 0;
+    align-items: center;
+  }
   .download-btn {
     width: 100%;
   }

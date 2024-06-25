@@ -89,3 +89,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .faq-con {
+    padding: 5rem 1.5rem;
+  }
+}

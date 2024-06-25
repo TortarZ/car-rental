@@ -110,12 +110,15 @@
   display: flex;
 }
 
+@media (max-width: 1440px) {
+  .car-detail-con {
+    padding: 5rem 3rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .pick-title {
     padding: 0 10rem;
-  }
-  .car-detail-con {
-    padding: 5rem 3rem;
   }
 
   #item-1 {

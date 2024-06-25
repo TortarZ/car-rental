@@ -77,13 +77,20 @@
   margin-right: 1.2rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .user-review-con {
     padding: 5rem 3rem;
   }
 
   .user-review-title {
     padding: 0 5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .example-user {
+    padding: 0;
+    margin-right: 5rem;
   }
 }
 

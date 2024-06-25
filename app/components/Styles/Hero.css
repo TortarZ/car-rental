@@ -52,9 +52,21 @@
   z-index: 2;
 }
 
+@media (max-width: 1440px) {
+  .hero-con {
+    padding: 10rem 2rem 10rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-con {
-    padding: 20rem 3rem 10rem;
+    padding: 20rem 2rem 10rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero-img {
+    width: 60%;
   }
 
   .book-ride-btn,

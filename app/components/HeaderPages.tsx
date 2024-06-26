@@ -1,13 +1,12 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
 import "./Styles/Header.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
-const logo_h = 52;
-const logo_w = 145;
-const Header = () => {
+const HeaderPages = () => {
   const [openNav, setOpenNav] = useState(false);
 
   const openNavBar = () => {
@@ -21,13 +20,7 @@ const Header = () => {
       <header className="header">
         <div className="navbar-con">
           <a href="/">
-            <Image
-              src="/logo.png"
-              height={logo_h}
-              width={logo_w}
-              alt="logo"
-              priority
-            />
+            <Image src="/logo.png" height={0} width={0} alt="logo" priority />
           </a>
           <ul className="navbar-link">
             <li className="nav-hover">
@@ -60,13 +53,7 @@ const Header = () => {
         </div>
         <div className="navbar-con-mobile">
           <a href="/">
-            <Image
-              src="/logo.png"
-              height={logo_h}
-              width={logo_w}
-              alt="logo"
-              priority
-            />
+            <Image src="/logo.png" height={0} width={0} alt="logo" priority />
           </a>
           <a className="mobile-hamburger" onClick={openNavBar}>
             <svg
@@ -132,4 +119,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderPages;

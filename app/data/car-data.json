@@ -1,0 +1,13 @@
+{
+  "cars": {
+    "car1": {
+      "model": "Audi",
+      "mark": "A1",
+      "year": "2012",
+      "doors": " 4/5",
+      "ac": "Yes",
+      "transmission": "Manual",
+      "Fuel": "Gasoline"
+    }
+  }
+}

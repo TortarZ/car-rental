@@ -60,7 +60,7 @@ const CarDetail = () => {
               <span>Yes</span>
             </div>
             <div className="car-detail-col">
-              <span>Tranmission</span>
+              <span>Transmission</span>
               <span>Manual</span>
             </div>
             <div className="car-detail-col">

@@ -1,19 +1,16 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import BookCar from "./components/BookCar";
-import Plan from "./components/Plan";
-import Banner from "./components/Banner";
-import PromoCar from "./components/PromoCar";
-import UserReview from "./components/UserReview";
-import FAQ from "./components/FAQ";
-import Download from "./components/Download";
-import Footer from "./components/Footer";
-import CarDetail from "./components/Cardetail";
+import Banner from "./Home/Banner";
+import BookCar from "./Home/BookCar";
+import CarDetail from "./Home/CarDetail";
+import Download from "./Home/Download";
+import FAQ from "./Home/FAQ";
+import Hero from "./Home/Hero";
+import Plan from "./Home/Plan";
+import PromoCar from "./Home/PromoCar";
+import UserReview from "./Home/UserReview";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
       <BookCar />
       <Plan />
@@ -23,7 +20,6 @@ export default function Home() {
       <UserReview />
       <FAQ />
       <Download />
-      <Footer />
     </>
   );
 }

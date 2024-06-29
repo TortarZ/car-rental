@@ -1,13 +1,56 @@
-{
-  "cars": {
-    "car1": {
-      "model": "Audi",
-      "mark": "A1",
-      "year": "2012",
-      "doors": " 4/5",
-      "ac": "Yes",
-      "transmission": "Manual",
-      "Fuel": "Gasoline"
-    }
+[
+  {
+    "model": "Audi",
+    "Mark": "A1",
+    "Year": "2012",
+    "Doors": "4/5",
+    "AC": "Yes",
+    "Transmission": "Manual",
+    "Fuel": "Gasoline"
+  },
+  {
+    "model": "Golf 6",
+    "Mark": "Volkswagen",
+    "Year": "2008",
+    "Doors": "4/5",
+    "AC": "Yes",
+    "Transmission": "Manual",
+    "Fuel": "Diesel"
+  },
+  {
+    "model": "Camry",
+    "Mark": "Toyota",
+    "Year": "2006",
+    "Doors": "4/5",
+    "AC": "Yes",
+    "Transmission": "Automatic",
+    "Fuel": "Hybrid"
+  },
+  {
+    "model": "320",
+    "Mark": "BMW",
+    "Year": "2012",
+    "Doors": "4/5",
+    "AC": "Yes",
+    "Transmission": "Manual",
+    "Fuel": "Diesel"
+  },
+  {
+    "model": "Benz GLK",
+    "Mark": "Mercedes",
+    "Year": "2006",
+    "Doors": "4/5",
+    "AC": "Yes",
+    "Transmission": "Manual",
+    "Fuel": "Diesel"
+  },
+  {
+    "model": "Passat CC",
+    "Mark": "Volkswagen",
+    "Year": "2008",
+    "Doors": "4/5",
+    "AC": "Yes",
+    "Transmission": "Automatic",
+    "Fuel": "Gasoline"
   }
-}
+]

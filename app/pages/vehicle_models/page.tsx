@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import CarData from "../../data/car-data.json";
 import { styled, ThemeProvider } from "styled-components";
 
-const Button = styled.button`
+interface ButtonProps {
+  $active?: boolean;
+}
+
+const Button = styled.button<ButtonProps>`
   background-color: ${(props) => props.theme.main};
   color: white;
   padding: 5px 15px;
@@ -13,6 +17,10 @@ const Button = styled.button`
   transition: ease background-color 0.2s;
   &:hover {
     background-color: ${(props) => props.theme.hover};
+  }
+  &:disabled {
+    cursor: default;
+    background-color: ${(props) => theme.hover};
   }
 `;
 
@@ -31,6 +39,28 @@ const theme = {
 const [audi, golf6, camry, bmw, benz, passat] = CarData;
 const types = ["audi", "golf6", "camry", "bmw", "benz", "passat"];
 
+const ButtonToggle = styled(Button)`
+  opacity: 0.7;
+  ${({ $active }) => $active && `opacity: 1`}
+`;
+
+function ToggleGroup() {
+  const [active, setActive] = useState(types[0]);
+  return (
+    <div className="flex gap-10 mt-5">
+      {types.map((type) => (
+        <ButtonToggle
+          $active={active === type}
+          onClick={() => setActive(type)}
+          key={type}
+        >
+          {type}
+        </ButtonToggle>
+      ))}
+    </div>
+  );
+}
+
 const clickMe = () => {
   alert("You clicked me!");
 };
@@ -41,9 +71,12 @@ const page = () => {
         <h3 id="demo">Audi</h3>
         <Button onClick={clickMe}>Button</Button>
         <ThemeProvider theme={theme}>
-          <Button>Button</Button>
+          <Button disabled onClick={clickMe}>
+            Button
+          </Button>
         </ThemeProvider>
       </div>
+      {ToggleGroup()}
     </>
   );
 };

@@ -8,6 +8,15 @@
 
 .pick-title {
   text-align: center;
+  width: 100%;
+}
+
+.pick-title h3 {
+  font-size: 24px;
+}
+
+.pick-title h2 {
+  font-size: 42px;
 }
 
 .pick-container {
@@ -30,6 +39,7 @@
   text-align: start;
   color: var(--text-black);
   font-size: 20px;
+  font-weight: 600;
 }
 
 .pick-car-btn:hover {

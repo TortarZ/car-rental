@@ -1,8 +1,19 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import "./Styles/CarDetail.css";
+import CarData from "../data/car-data.json";
+
+const cars = CarData;
 
 const CarDetail = () => {
+  const [selectedCar, setSelectedCar] = useState(cars[0]); // Used useState to set default value to cars[0].
+
+  const handleButtonClick = (car: any) => {
+    //Create func that handle onClick is received a car in cars Object and change that default value in useState.
+    setSelectedCar(car);
+  };
+
   return (
     <>
       <section className="car-detail-con">
@@ -16,56 +27,65 @@ const CarDetail = () => {
         </div>
         <div className="pick-container">
           <div className="pick-box" id="item-1">
-            <button className="button pick-btn active">Audi A1 S-Line</button>
-            <button className="button pick-btn">VW Golf 6</button>
-            <button className="button pick-btn">Toyota Camry</button>
-            <button className="button pick-btn">BMW 320 ModernLine</button>
-            <button className="button pick-btn">Mercedes-Benz GLK</button>
-            <button className="button pick-btn">VW Passat CC</button>
+            {cars.map(
+              (
+                car // map a cars from JSON file to destructuring.
+              ) => (
+                <button
+                  key={car.id}
+                  className={`button pick-car-btn ${
+                    selectedCar.id === car.id ? "active" : "" //this check if selectedCar in useState value is match car.id from the button that have been clicked it will set the className to active.
+                  }`}
+                  onClick={() => handleButtonClick(car)}
+                >
+                  {car.name}
+                </button>
+              )
+            )}
           </div>
           <div className="pick-img" id="item-2">
             <Image
-              src="/Audi A1 S-Line.jpg"
+              src={`${selectedCar.image}`}
               width={0}
               height={0}
-              alt="audi_a1_s-line"
-              sizes="100vh"
+              alt={selectedCar.name}
+              sizes="100%"
               priority
               className="pick-car"
             />
           </div>
           <div className="pick-detail" id="item-3">
             <div className="car-detail-price">
-              <span>$45</span>
+              <span>${`${selectedCar.price}`}</span>
               <span>/ rent per day</span>
             </div>
             <div className="car-detail-col">
               <span>Model</span>
-              <span>Audi</span>
+              <span>{selectedCar.model}</span>
             </div>
             <div className="car-detail-col">
               <span>Mark</span>
-              <span>A1</span>
+              <span>{selectedCar.Mark}</span>
             </div>
             <div className="car-detail-col">
               <span>Year</span>
-              <span>2012</span>
+              <span>{selectedCar.Year}</span>
             </div>
             <div className="car-detail-col">
               <span>Doors</span>
-              <span>4/5</span>
+              <span>{selectedCar.Doors}</span>
             </div>
             <div className="car-detail-col">
               <span>AC</span>
-              <span>Yes</span>
+              <span>{selectedCar.AC}</span>
             </div>
             <div className="car-detail-col">
               <span>Transmission</span>
-              <span>Manual</span>
+              <span>{selectedCar.Transmission}</span>
             </div>
             <div className="car-detail-col">
               <span>Fuel</span>
-              <span>Gasoline</span>
+              <span>{selectedCar.Fuel}</span>
             </div>
             <div className="btn-box">
               <a href="#" className="cta-btn">

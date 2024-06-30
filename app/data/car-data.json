@@ -1,56 +1,80 @@
 [
   {
+    "id": 1,
+    "name": "Audi A1 S-Line",
     "model": "Audi",
     "Mark": "A1",
-    "Year": "2012",
+    "Year": 2012,
     "Doors": "4/5",
     "AC": "Yes",
     "Transmission": "Manual",
-    "Fuel": "Gasoline"
+    "Fuel": "Gasoline",
+    "price": 45,
+    "image": "/cars/Audi A1 S-Line.jpg"
   },
   {
+    "id": 2,
+    "name": "VW Golf 6",
     "model": "Golf 6",
     "Mark": "Volkswagen",
-    "Year": "2008",
+    "Year": 2008,
     "Doors": "4/5",
     "AC": "Yes",
     "Transmission": "Manual",
-    "Fuel": "Diesel"
+    "Fuel": "Diesel",
+    "price": 37,
+    "image": "/cars/VW Golf 6.jpg"
   },
   {
+    "id": 3,
+    "name": "Toyota Camry",
     "model": "Camry",
     "Mark": "Toyota",
-    "Year": "2006",
+    "Year": 2006,
     "Doors": "4/5",
     "AC": "Yes",
     "Transmission": "Automatic",
-    "Fuel": "Hybrid"
+    "Fuel": "Hybrid",
+    "price": 30,
+    "image": "/cars/Toyota Camry.jpg"
   },
   {
+    "id": 4,
+    "name": "BMW 320 ModernLine",
     "model": "320",
     "Mark": "BMW",
-    "Year": "2012",
+    "Year": 2012,
     "Doors": "4/5",
     "AC": "Yes",
     "Transmission": "Manual",
-    "Fuel": "Diesel"
+    "Fuel": "Diesel",
+    "price": 35,
+    "image": "/cars/BMW 320 ModernLine.jpg"
   },
   {
+    "id": 5,
+    "name": "Mercedes-Benz GLK",
     "model": "Benz GLK",
     "Mark": "Mercedes",
-    "Year": "2006",
+    "Year": 2006,
     "Doors": "4/5",
     "AC": "Yes",
     "Transmission": "Manual",
-    "Fuel": "Diesel"
+    "Fuel": "Diesel",
+    "price": 50,
+    "image": "/cars/Mercedes-Benz GLK.jpg"
   },
   {
+    "id": 6,
+    "name": "VW Passat CC",
     "model": "Passat CC",
     "Mark": "Volkswagen",
-    "Year": "2008",
+    "Year": 2008,
     "Doors": "4/5",
     "AC": "Yes",
     "Transmission": "Automatic",
-    "Fuel": "Gasoline"
+    "Fuel": "Gasoline",
+    "price": 25,
+    "image": "/cars/VW Passat CC.jpg"
   }
 ]

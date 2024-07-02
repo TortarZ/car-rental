@@ -55,11 +55,20 @@
 
 .question p {
   color: var(--btn-black);
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.active-question,
-.active-question p {
+.question,
+.active-question {
+  transition: all 0.3s ease;
+}
+
+.active-question {
   background-color: var(--btn);
+}
+.active-question p {
   color: var(--btn-text);
 }
 
@@ -68,11 +77,22 @@
   z-index: 2;
 }
 
+.answer {
+  height: 0;
+  overflow: hidden;
+}
+
+.answer,
+.active-answer {
+  transition: all 0.2s ease;
+}
+
 .active-answer {
   padding: 2rem 3.5rem;
   color: var(--faq-ans-text);
   font-family: var(--font-rubik);
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
 @media (max-width: 1024px) {

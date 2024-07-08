@@ -48,51 +48,50 @@
 .question {
   display: flex;
   justify-content: space-between;
-  padding: 1.2rem 3rem;
+  align-items: center;
   background-color: #fff;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem 3rem;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .question p {
-  color: var(--btn-black);
-  margin: 0;
-  font-weight: 500;
   font-size: 18px;
+  color: var(--text-black);
+  margin: 0;
 }
 
-.question,
-.active-question {
-  transition: all 0.3s ease;
+.question p,
+.active {
+  transition: background-color 0.6s ease;
 }
 
-.active-question {
+.question span {
+  font-size: 20px;
+}
+
+.active {
   background-color: var(--btn);
-}
-.active-question p {
-  color: var(--btn-text);
-}
-
-.active-question {
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
-  z-index: 2;
 }
 
 .answer {
-  height: 0;
-  overflow: hidden;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
-.answer,
-.active-answer {
-  transition: all 0.2s ease;
+.answer.show {
+  display: block;
+  padding: 2rem 3rem;
+  transition: all 0.1s cubic-bezier((1, 0, 1, 0));
 }
 
-.active-answer {
-  padding: 2rem 3.5rem;
-  color: var(--faq-ans-text);
+.answer p {
   font-family: var(--font-rubik);
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
-  height: 100%;
+  margin: 0;
 }
 
 @media (max-width: 1024px) {

@@ -1,63 +1,318 @@
-label {
-  display: flex;
-}
-
-.book-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 10rem;
-}
-
-.bookcar-con {
+.book_car {
   background-image: url("../../../public/bookcar-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #fff;
-  width: 100%;
-  padding: 40px 45px 50px 55px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  margin: 5rem 20rem;
+  border-radius: 5px;
 }
 
-.bookcar-content {
+.book_car_con {
+  padding: 3rem;
+}
+
+.book_car_con h2 {
+  padding-bottom: 1.5rem;
+}
+
+.booking_car_error {
+  display: none;
+}
+
+.active_error {
+  background-color: #f8d7da;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.active_error svg,
+.error_text {
+  color: #721c24;
+}
+
+.booking_car_complete {
+  display: none;
+}
+
+.active_complete {
+  background-color: #c3fabe;
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active_complete svg,
+.complete_text {
+  color: #2a6817;
+}
+
+.book_car_con_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 
-.submit-con {
+.book_car_btn_box {
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
 }
 
-.submit-btn {
+.book_car_btn {
   width: 100%;
-  padding: 12px 13px;
+  text-align: center;
 }
 
-.box-form {
-  margin-top: 1.6rem;
+label {
+  display: flex;
+  padding-bottom: 0.3rem;
 }
 
-@media (max-width: 1024px) {
-  .book-section {
-    padding: 2rem 2rem;
+label svg {
+  margin-right: 0.5rem;
+}
+
+select {
+  font-size: 14px;
+}
+
+@media (max-width: 1280px) {
+  .book_car {
+    margin: 5rem 2rem;
   }
 }
 
-@media (max-width: 768px) {
-  .book-section {
-    padding: 2rem 1rem;
+@media (max-width: 840px) {
+  .book_car {
+    margin: 5rem 2rem;
   }
 
-  .bookcar-content {
+  .book_car_con_box {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 430px) {
-  .bookcar-content {
+  .book_car_con_box {
     grid-template-columns: 1fr;
+  }
+
+  .book_car_con {
+    padding: 3rem 2rem;
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  visibility: hidden;
+}
+
+.active_modal {
+  visibility: visible;
+}
+
+.booking_modal {
+  background-color: #fff;
+  overflow: auto;
+  margin: 2rem;
+  padding: 0.1rem;
+}
+
+.info_left_item input {
+  width: max-content;
+  padding: 0;
+  margin-left: 0.5rem;
+  border: 1px solid var(--btn-black);
+}
+
+.responsiveImage {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.booking_modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--btn);
+  padding: 0.5rem 1rem;
+}
+
+.booking_modal_header h2,
+.close_menu {
+  color: var(--btn-text);
+}
+
+.booking_modal_title {
+  background-color: #ffeae6;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking_modal_title div:first-child {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.booking_modal_title h3,
+.info_circle {
+  font-size: 19px;
+  color: var(--btn);
+}
+
+.booking_modal_title p {
+  font-size: 17px;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+}
+
+.booking_modal_info {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+
+.booking_modal_info h3,
+h4 {
+  font-family: var(--font-poppins);
+}
+
+.info_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info_left h3 {
+  font-size: 18px;
+  color: var(--btn);
+  font-weight: 700;
+}
+
+.info_left_box {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.info_left_detail h4 {
+  font-size: 15px;
+}
+
+.info_left_item {
+  display: flex;
+  width: 100%;
+}
+
+.info_right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.info_right div {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.info_right h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info_right h3:nth-child(2) {
+  color: var(--btn);
+}
+
+.booking_modal_personal {
+  border-top: 1px solid var(--text-gray);
+  padding: 3rem 2rem;
+}
+
+.booking_modal_personal input {
+  background-color: var(--bg-gray-db);
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-gray-info);
+}
+
+.booking_modal_personal input::placeholder {
+  color: var(--text-gray-info);
+}
+
+.personal_info_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.booking_modal_personal p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.booking_modal_checkbox {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 2rem 2rem;
+}
+
+.booking_modal_checkbox input {
+  width: auto;
+}
+
+.booking_modal_reserve {
+  background-color: var(--bg-gray-db);
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 540px) {
+  .booking_modal_info {
+    flex-direction: column;
+  }
+
+  .info_left {
+    width: auto;
+    padding: 2rem 0;
+  }
+
+  .info_left h3 {
+    text-align: center;
+  }
+
+  .info_right_box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .personal_info_box {
+    grid-template-columns: 1fr;
+  }
+
+  .booking_modal {
+    margin: 0;
   }
 }

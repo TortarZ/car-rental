@@ -12,6 +12,10 @@
   z-index: 2;
 }
 
+.hero-content p {
+  margin-bottom: 40px;
+}
+
 .bg-homepage {
   width: 680px;
   height: 780px;

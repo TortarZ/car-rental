@@ -10,7 +10,8 @@
     "Transmission": "Manual",
     "Fuel": "Gasoline",
     "price": 45,
-    "image": "/cars/Audi A1 S-Line.jpg"
+    "image": "/cars/Audi A1 S-Line.jpg",
+    "imageLink": "https://car-rental-ten.vercel.app/static/media/audia1.d038cf70b700e34e607a.jpg"
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     "Transmission": "Manual",
     "Fuel": "Diesel",
     "price": 37,
-    "image": "/cars/VW Golf 6.jpg"
+    "image": "/cars/VW Golf 6.jpg",
+    "imageLink": "https://car-rental-ten.vercel.app/static/media/golf6.595c0bbfc7ce2e50aa05.jpg"
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
     "Transmission": "Automatic",
     "Fuel": "Hybrid",
     "price": 30,
-    "image": "/cars/Toyota Camry.jpg"
+    "image": "/cars/Toyota Camry.jpg",
+    "imageLink": "https://car-rental-ten.vercel.app/static/media/toyotacamry.3d493a56558c50b677cc.jpg"
   },
   {
     "id": 4,
@@ -49,7 +52,8 @@
     "Transmission": "Manual",
     "Fuel": "Diesel",
     "price": 35,
-    "image": "/cars/BMW 320 ModernLine.jpg"
+    "image": "/cars/BMW 320 ModernLine.jpg",
+    "imageLink": "https://car-rental-ten.vercel.app/static/media/bmw320.84ab73b0c9133418f907.jpg"
   },
   {
     "id": 5,
@@ -62,7 +66,8 @@
     "Transmission": "Manual",
     "Fuel": "Diesel",
     "price": 50,
-    "image": "/cars/Mercedes-Benz GLK.jpg"
+    "image": "/cars/Mercedes-Benz GLK.jpg",
+    "imageLink": "https://car-rental-ten.vercel.app/static/media/benz.0a6153731a2c1a68054a.jpg"
   },
   {
     "id": 6,
@@ -75,6 +80,7 @@
     "Transmission": "Automatic",
     "Fuel": "Gasoline",
     "price": 25,
-    "image": "/cars/VW Passat CC.jpg"
+    "image": "/cars/VW Passat CC.jpg",
+    "imageLink": "https://car-rental-ten.vercel.app/static/media/passatcc.bd82bd1deac8c11e3c4d.jpg"
   }
 ]

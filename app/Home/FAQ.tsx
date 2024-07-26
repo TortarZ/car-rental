@@ -23,11 +23,45 @@ const faqData = [
   },
 ];
 
-const FAQ = () => {
-  const [selectQuestion, setSelectQuestion] = useState(faqData[0]);
+const FAQItem = ({ question, answer, isOpen, onClick, index }: any) => {
+  const [isActive, setIsActive] = useState(false);
 
-  const toggle = (i: any) => {
-    setSelectQuestion(i);
+  let toggleClassActive = isOpen ? "active" : "";
+  let toggleClassAnswer = isOpen ? "show" : "";
+
+  return (
+    <div className="faq-con-content">
+      <div onClick={onClick} className={`question ${toggleClassActive}`}>
+        <div>
+          {index}
+          <b>.</b>
+          {question}
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="tabler-icon tabler-icon-chevron-down"
+        >
+          <path d="M6 9l6 6l6 -6"></path>
+        </svg>
+      </div>
+      {isOpen && <div className={`answer ${toggleClassAnswer}`}>{answer}</div>}
+    </div>
+  );
+};
+
+const FAQ = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleClick = (index: any) => {
+    setOpenIndex(index === openIndex ? null : index);
   };
   return (
     <>
@@ -40,28 +74,18 @@ const FAQ = () => {
             Our Website: Answers to Common Concerns and Inquiries.
           </p>
         </div>
-        {faqData.map((item, i) => (
-          <div className="faq-con-content" key={item.id}>
-            <div
-              className={`question ${
-                selectQuestion.question === item.question ? "active" : ""
-              }`}
-              onClick={() => toggle(item)}
-            >
-              <p>
-                {i + 1}.{item.question}
-              </p>
-              <span>&#709;</span>
-            </div>
-            <div
-              className={`answer ${
-                selectQuestion.answer === item.answer ? "show" : ""
-              }`}
-            >
-              <p>{item.answer}</p>
-            </div>
-          </div>
-        ))}
+        <div className="faq-con-container">
+          {faqData.map((item, i) => (
+            <FAQItem
+              key={i}
+              question={item.question}
+              answer={item.answer}
+              isOpen={i === openIndex}
+              index={i + 1}
+              onClick={() => handleClick(i)}
+            />
+          ))}
+        </div>
       </section>
     </>
   );

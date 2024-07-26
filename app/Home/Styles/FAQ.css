@@ -34,7 +34,7 @@
 
 .faq-con-container {
   width: 100%;
-  padding: 0 25rem;
+  padding: 0 20%;
 }
 
 .question {
@@ -111,5 +111,11 @@
 @media (max-width: 768px) {
   .faq-con {
     padding: 5rem 1.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .faq-con-container {
+    padding: 0 5%;
   }
 }

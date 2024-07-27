@@ -87,33 +87,41 @@ const Header = (props: any) => {
           </div>
         </div>
         <div className={`navbar-con-mobile ${navbar}-mobile`}>
-          <a href="/">
-            <Image
-              src="/logo.png"
-              height={logo_h}
-              width={logo_w}
-              alt="logo"
-              priority
-            />
-          </a>
-          <a className="mobile-hamburger" onClick={openNavBar}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="tabler-icon tabler-icon-menu-2"
-            >
-              <path d="M4 6l16 0"></path>
-              <path d="M4 12l16 0"></path>
-              <path d="M4 18l16 0"></path>
-            </svg>
-          </a>
+          <div className="flex justify-between w-full">
+            <a href="/">
+              <Image
+                src="/logo.png"
+                height={logo_h}
+                width={logo_w}
+                alt="logo"
+                priority
+              />
+            </a>
+            <a className="mobile-hamburger" onClick={openNavBar}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="tabler-icon tabler-icon-menu-2"
+              >
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+              </svg>
+            </a>
+          </div>
+          <div className={`navbar-con-title ${title}`}>
+            <h2>{getPageTitle()}</h2>
+            <h3>
+              <Link href="/">Home </Link>/ {getPageTitle()}
+            </h3>
+          </div>
         </div>
         <div className={`navbar-side ${toggleClassCheck}`}>
           <ul className="navbar-side-box">

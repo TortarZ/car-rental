@@ -1,0 +1,35 @@
+.book-banner {
+  background-image: url(https://car-rental-ten.vercel.app/static/media/book-banner.09fcba44170a314c81a8.png);
+  background-size: cover;
+  height: 15rem;
+}
+
+.book-banner-box {
+  background-color: #2d2d2dcb;
+  padding: 0 5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  & h1 {
+    color: var(--btn-text);
+    font-size: 2rem;
+    margin: 0;
+  }
+  & h1:nth-child(2),
+  svg {
+    color: var(--btn);
+  }
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .book-banner-box {
+    flex-direction: column;
+  }
+}

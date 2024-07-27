@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import BookBanner from "../components/BookBanner";
 
 function Pages({
   children,
@@ -10,6 +11,7 @@ function Pages({
     <>
       <Header header="bg-header" navbar="navbar-container" />
       {children}
+      <BookBanner />
     </>
   );
 }

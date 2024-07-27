@@ -1,3 +1,4 @@
+import Header from "./components/Header";
 import Banner from "./Home/Banner";
 import BookCar from "./Home/BookCar";
 import CarDetail from "./Home/CarDetail";
@@ -11,6 +12,7 @@ import UserReview from "./Home/UserReview";
 export default function Home() {
   return (
     <>
+      <Header title="title-off" />
       <Hero />
       <BookCar />
       <Plan />

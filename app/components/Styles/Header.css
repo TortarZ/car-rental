@@ -1,9 +1,16 @@
 .header {
   width: 100%;
-  padding: 1.5rem 15%;
   font-family: var(--font-rubik);
-  position: sticky;
+  position: absolute;
   z-index: 999;
+}
+
+.bg-header {
+  height: 20rem;
+  background-image: url(https://car-rental-ten.vercel.app/static/media/heroes-bg.71ab9a13d73de3860763.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
 }
 
 .navbar-link,
@@ -12,9 +19,32 @@
   display: flex;
 }
 
+.navbar-container,
+.navbar-container-mobile {
+  height: 100%;
+  background-color: hsla(0, 0%, 100%, 0.92);
+}
+
 .navbar-con {
   align-items: center;
   justify-content: space-between;
+  padding: 2rem 20%;
+}
+
+.navbar-con-title {
+  padding: 2rem 24rem;
+  display: block;
+}
+
+.navbar-con-title h2 {
+  font-size: 2.4rem;
+}
+& h3 {
+  font-weight: 500;
+}
+
+.title-off {
+  display: none;
 }
 
 .navbar-link {
@@ -62,20 +92,24 @@
   display: none;
 }
 
-@media (max-width: 1280px) {
-  .header {
-    padding: 2rem 3rem;
+@media (max-width: 1440px) {
+  .navbar-con {
+    padding: 2rem 10%;
   }
 }
 
 @media (max-width: 1024px) {
-  .header {
-    padding: 1.5rem 1rem;
-  }
-
   .mobile-hamburger,
   .navbar-side-close-btn {
     cursor: pointer;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+
+  .navbar-container-mobile {
+    display: block;
   }
 
   .navbar-con {
@@ -85,7 +119,8 @@
   .navbar-con-mobile {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding: 2rem;
   }
 
   .navbar-side {
@@ -129,11 +164,5 @@
 
   .active-nav {
     right: 0;
-  }
-}
-
-@media (max-width: 390px) {
-  .header {
-    padding: 2rem 1rem;
   }
 }

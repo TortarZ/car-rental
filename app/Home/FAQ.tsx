@@ -24,8 +24,6 @@ const faqData = [
 ];
 
 const FAQItem = ({ question, answer, isOpen, onClick, index }: any) => {
-  const [isActive, setIsActive] = useState(false);
-
   let toggleClassActive = isOpen ? "active" : "";
   let toggleClassAnswer = isOpen ? "show" : "";
 

@@ -25,15 +25,16 @@
   background-color: hsla(0, 0%, 100%, 0.92);
 }
 
+.navbar-container {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
 .navbar-con {
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 20%;
-}
-
-.navbar-con-title {
-  padding: 2rem 24rem;
-  display: block;
 }
 
 .navbar-con-title h2 {
@@ -90,15 +91,6 @@
 .navbar-con-mobile,
 .navbar-side {
   display: none;
-}
-
-@media (max-width: 1440px) {
-  .navbar-con {
-    padding: 2rem 10%;
-  }
-  s .navbar-con-title {
-    padding: 2rem 9rem;
-  }
 }
 
 @media (max-width: 1024px) {

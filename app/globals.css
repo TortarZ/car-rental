@@ -66,10 +66,13 @@ input {
   width: 100%;
   border: 1px solid var(--input-border);
   border-radius: 3px;
-  color: var(--input-text);
+  color: var(--text-gray-info);
   font-weight: 400;
   font-size: 0.8rem;
   outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 label {

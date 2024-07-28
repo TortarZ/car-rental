@@ -1,0 +1,17 @@
+.car-con-detail-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.car-con-detail h4 {
+  font-size: 1.3rem;
+  color: #777777;
+}
+
+@media (min-width: 1024px) {
+  .car-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5rem;
+  }
+}

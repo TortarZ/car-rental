@@ -103,6 +103,10 @@
     cursor: pointer;
   }
 
+  .navbar-home {
+    display: none;
+  }
+
   .navbar-container {
     display: none;
   }

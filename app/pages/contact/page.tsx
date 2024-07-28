@@ -100,7 +100,7 @@ const Contact = () => {
           <form
             action=""
             method="POST"
-            className="flex flex-col gap-4 w-full mt-8"
+            className="flex flex-col gap-4 w-full mt-8 contact-form"
             autoComplete="on"
           >
             <label htmlFor="fName">

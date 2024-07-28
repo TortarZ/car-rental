@@ -32,6 +32,10 @@
   gap: 5rem;
 }
 
+.navbar-home {
+  padding: 2rem 3rem;
+}
+
 .navbar-con {
   align-items: center;
   justify-content: space-between;

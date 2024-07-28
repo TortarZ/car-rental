@@ -16,7 +16,7 @@ function AboutPage() {
             width={0}
             height={0}
             sizes="100%"
-            className="w-auto h-auto object-cover"
+            className="w-full h-auto object-cover"
           />
           <div>
             <h2>About Company</h2>

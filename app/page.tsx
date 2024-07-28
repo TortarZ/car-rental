@@ -12,7 +12,7 @@ import UserReview from "./Home/UserReview";
 export default function Home() {
   return (
     <>
-      <Header title="title-off" />
+      <Header title="title-off" navbar="navbar-home" />
       <Hero />
       <BookCar />
       <Plan />

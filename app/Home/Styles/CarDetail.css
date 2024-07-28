@@ -131,6 +131,7 @@
 @media (max-width: 1280px) {
   .pick-container {
     flex-wrap: wrap;
+    padding: 5rem 8rem;
   }
 
   #item-1 {
@@ -145,13 +146,12 @@
 
   .pick-img {
     width: 100%;
-    padding: 0 12rem;
   }
 
   .pick-box,
   .pick-detail {
-    padding: 2rem 3rem;
     width: 50%;
+    padding: 1rem;
   }
 }
 

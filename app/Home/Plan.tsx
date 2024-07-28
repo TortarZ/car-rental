@@ -54,10 +54,10 @@ const Plan = () => {
                 sizes="100vh"
                 className="plan-img"
               />
-              <h2>Let's Drive</h2>
+              <h2>Let&#39;s Drive</h2>
               <p>
-                Whether you're hitting the open road, we've hot you covered with
-                our wide range of cars
+                Whether you&#39;re hitting the open road, we&#39;ve hot you
+                covered with our wide range of cars
               </p>
             </div>
           </div>

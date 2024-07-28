@@ -25,8 +25,8 @@ const PromoCar = () => {
                 unbeatable offers. We&apos;re dedicated to providing you with
                 the best value for your money, so you can enjoy top-quality
                 services and products without breaking the bank. Our deals are
-                designed to give you the ultimate renting experience, so don't
-                miss out on your chance to save big.
+                designed to give you the ultimate renting experience, so
+                don&#39;t miss out on your chance to save big.
               </p>
               <a href="#" className="button find-detail-btn">
                 Find Details{" "}

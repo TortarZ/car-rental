@@ -9,20 +9,20 @@ const UserReview = () => {
         <div className="user-review-con">
           <div className="user-review-title">
             <h4>Reviewed by People</h4>
-            <h2>Client's Testimonials</h2>
+            <h2>Client&#39;s Testimonials</h2>
             <p>
-              Discover the positive impact we've made on the our clients by
+              Discover the positive impact we&#39;ve made on the our clients by
               reading through their testimonials. Our clients have experienced
-              our service and results, and they're eager to share their positive
-              experiences with you.
+              our service and results, and they&#39;re eager to share their
+              positive experiences with you.
             </p>
           </div>
           <ul className="user-review-example">
             <li className="example">
               <p>
-                "We rented a car from this website and had an amazing
+                &#34;We rented a car from this website and had an amazing
                 experience! The booking was easy and the rental rates were very
-                affordable. "
+                affordable. &#34;
               </p>
               <div className="example-box">
                 <div className="example-user">
@@ -60,8 +60,8 @@ const UserReview = () => {
             </li>
             <li className="example">
               <p>
-                "The car was in great condition and made our trip even better.
-                Highly recommend for this car rental website!"
+                &#34;The car was in great condition and made our trip even
+                better. Highly recommend for this car rental website!&#34;
               </p>
               <div className="example-box">
                 <div className="example-user">

@@ -1,7 +1,12 @@
+import UserReview from "@/app/Home/UserReview";
 import React from "react";
 
 const Testimonials = () => {
-  return <div>Testimonials</div>;
+  return (
+    <>
+      <UserReview />
+    </>
+  );
 };
 
 export default Testimonials;
